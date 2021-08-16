@@ -26,6 +26,7 @@ export class WorkshopPipelineStack extends cdk.Stack {
             pipelineName: 'WorkshopPipeline',
             cloudAssemblyArtifact,
             crossAccountKeys: false,
+            supportDockerAssets: true,
 
             // Generates the source artifact from the repo we created in the last step
             sourceAction: new codepipeline_actions.CodeCommitSourceAction({
