@@ -1,1 +1,11 @@
+*.js
+!cdk-workshop/jest.config.js
+*.d.ts
+cdk-workshop/node_modules
+
+# CDK asset staging directory
+cdk-workshop/.cdk.staging
+cdk-workshop/cdk.out
+
+!**/lambda/**/*.js
 **/target
